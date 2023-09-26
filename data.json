@@ -1,1 +1,1 @@
-{"users":[{"id":"0","name":"fulano"},{"id":"1","name":"ciclano"},{"id":"2","name":"beltrano"}],"posts":[{"id":"0","author":"2","content":"hello world"},{"id":"1","author":"3","content":"hello world"}]}
+{"users":[{"id":"0","name":"fulano"},{"id":"1","name":"ciclano"},{"id":"2","name":"beltrano"}],"posts":[{"id":"0","author":"2","content":"hello world"},{"id":"1","author":"0","content":"hello world"}]}
