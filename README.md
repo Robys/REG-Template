@@ -15,7 +15,8 @@
 █░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█
 ██████████████████████████████████████████████████
 
-A React JS + Express + GraphQL (Apollo Server) boilerplate for ready future projects
+A React JS + Express + GraphQL (Apollo Server) boilerplate for ready future projects. The database is just a JSON file, that can be changed for
+a more "sofisticated" storage.
 
 - npm install
 - npm run server
