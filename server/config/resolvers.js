@@ -27,6 +27,13 @@ const RemoveUserFromJsonData = (user) =>{
     UpdatateJsonFile()
 }
 
+const RemovePostFromJsonData = (post) =>{
+    data.posts = data.posts.filter((x) => x.id !== post)
+    //console.log(data.users)
+    UpdatateJsonFile()
+}
+
+
 const WritePostOnJsonData = (author,content) =>{
     const post = {"id":data.posts.length.toString(),"author":author,"content":content}
     data.posts.push(post)
@@ -62,7 +69,11 @@ const resolvers = {
         createPost: (_,{author,content}) =>{
             WritePostOnJsonData(author,content)
             return data.posts
-        }
+        },
+        deletePost: (_,args) =>{
+            RemovePostFromJsonData(args.id)
+            return data.posts
+        },
     }
 }
 

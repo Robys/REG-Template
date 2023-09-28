@@ -12,6 +12,7 @@ type Mutation{
     createUser(name:String!):[User!]!,
     deleteUser(id:ID!):[User!]!
     createPost(author:ID!,content:String):Post!
+    deletePost(id:ID!):[Post!]!
     }
 type Query{
     users: [User!]!
